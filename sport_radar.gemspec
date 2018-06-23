@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "sport_radar/version"
@@ -8,9 +10,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Trevor John"]
   spec.email         = ["trevor@john.tj"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{SportRadar API Wrapper}
+  spec.description   = %q{Cleanly wrap SportRadar API to parse out important information.}
+  spec.homepage      = "https://github.com/trevorrjohn/sport-radar"
   spec.license       = "MIT"
 
   # Specify which files should be added to the gem when it is released.
@@ -23,6 +25,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.16"
+  spec.add_development_dependency "pry", "~> 0.11"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
 end
