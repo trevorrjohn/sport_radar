@@ -1,9 +1,14 @@
+# frozen_string_literal: true
+
 RSpec.describe SportRadar do
   it "has a version number" do
     expect(SportRadar::VERSION).not_to be nil
   end
 
-  it "does something useful" do
-    expect(false).to eq(true)
+  describe '.config' do
+    it 'is a Config' do
+      described_class.configure { |_| }
+      expect(described_class.config).to be_a SportRadar::Config
+    end
   end
 end
