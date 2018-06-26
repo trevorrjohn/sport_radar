@@ -1,0 +1,106 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.sportradar.us/nba/<NBA_SPORT_RADAR_V4_ACCESS_LEVEL>/v4/en/teams/583ec825-fb46-11e1-82cb-f4ce4684ea4c/profile.json?api_key=<NBA_SPORT_RADAR_V4_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.sportradar.us
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '0'
+      Cache-Control:
+      - public,must-revalidate,max-age=105
+      Content-Language:
+      - en
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Sun, 24 Jun 2018 17:26:57 GMT
+      Expires:
+      - Sun, 24 Jun 2018 17:31:58 GMT
+      Server:
+      - nginx
+      Via:
+      - 1.1 varnish-v4
+      X-Be-Cache:
+      - MISS
+      X-Fe-Cache:
+      - MISS
+      X-Mashery-Responder:
+      - prod-j-worker-us-east-1e-64.mashery.com
+      X-Plan-Qps-Current:
+      - '1'
+      X-Varnish:
+      - '6022534'
+      X-Via:
+      - Translation-Proxy
+      Content-Length:
+      - '8935'
+      Connection:
+      - keep-alive
+      X-Plan-Qps-All<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>ted:
+      - '25'
+      X-Plan-Qu<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>a-All<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>ted:
+      - '15000'
+      X-Plan-Qu<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>a-Current:
+      - '50'
+    body:
+      encoding: UTF-8
+      string: '{"id":"583ec825-fb46-11e1-82cb-f4ce4684ea4c","name":"Warriors","market":"Golden
+        State","alias":"GSW","founded":1946,"reference":"1610612744","venue":{"id":"e25e21f2-1d67-5f13-910b-81fc8629eea7","name":"Oracle
+        Arena","capacity":19596,"address":"7000 Coliseum Way","city":"Oakland","state":"CA","zip":"94621","country":"USA"},"league":{"id":"4353138d-4c22-4396-95d8-5f587d2df25c","name":"NBA","alias":"NBA"},"conference":{"id":"7fe7e212-de01-4f8f-a31d-b9f0a95731e3","name":"WESTERN
+        CONFERENCE","alias":"WESTERN"},"division":{"id":"f074cb3e-90cf-42e1-8067-cdbcd99ec230","name":"Pacific","alias":"PACIFIC"},"coaches":[{"id":"04bb3fde-d798-44a1-a4c1-2c98c9bbf04b","full_name":"Steve
+        Kerr","first_name":"Steve","last_name":"Kerr","position":"Head Coach","experience":"1","reference":"204005"}],"players":[{"id":"03854148-a3fa-4564-b1ff-922fe0ba32ba","status":"ACT","full_name":"Patrick
+        McCaw","first_name":"Patrick","last_name":"McCaw","abbr_name":"P.McCaw","height":79,"weight":185,"position":"G","primary_position":"SG","jersey_number":"0","experience":"1","college":"Nevada-Las
+        Vegas","birth_place":"St. Louis, MO, USA","birthdate":"1995-10-25","updated":"2018-02-12T22:20:00+00:00","reference":"1627775","draft":{"team_id":"583ecefd-fb46-11e1-82cb-f4ce4684ea4c","year":2016,"round":"2","pick":"38"}},{"id":"11bda3d9-55a2-4489-928a-1648e6231784","status":"ACT","full_name":"Jordan
+        Bell","first_name":"Jordan","last_name":"Bell","abbr_name":"J.Bell","height":81,"weight":224,"position":"F","primary_position":"PF","jersey_number":"2","experience":"0","college":"Oregon","birth_place":"Los
+        Angeles, CA, USA","birthdate":"1995-01-07","updated":"2018-03-05T23:28:03+00:00","reference":"1628395","draft":{"team_id":"583ec5fd-fb46-11e1-82cb-f4ce4684ea4c","year":2017,"round":"2","pick":"38"}},{"id":"2365e884-e0d9-43a4-8efe-a4bd9a14329a","status":"ACT","full_name":"David
+        West","first_name":"David","last_name":"West","abbr_name":"D.West","height":81,"weight":250,"position":"F","primary_position":"PF","jersey_number":"3","experience":"14","college":"Xavier","birth_place":"Teaneck,
+        NJ, USA","birthdate":"1980-08-29","updated":"2017-10-17T19:37:08+00:00","reference":"2561","draft":{"team_id":"583ecc9a-fb46-11e1-82cb-f4ce4684ea4c","year":2003,"round":"1","pick":"18"}},{"id":"34ff5b55-42ef-40c0-a2c4-9c28b5476a03","status":"ACT","full_name":"JaVale
+        McGee","first_name":"JaVale","last_name":"McGee","abbr_name":"J.McGee","height":84,"weight":270,"position":"C","primary_position":"C","jersey_number":"1","experience":"9","college":"Nevada","birth_place":"Flint,
+        MI, USA","birthdate":"1988-01-19","updated":"2017-10-17T16:26:24+00:00","reference":"201580","draft":{"team_id":"583ec8d4-fb46-11e1-82cb-f4ce4684ea4c","year":2008,"round":"1","pick":"18"}},{"id":"44231f84-c69d-440d-9287-e210d4ce1672","status":"ACT","full_name":"Damian
+        Jones","first_name":"Damian","last_name":"Jones","abbr_name":"D.Jones","height":84,"weight":245,"position":"C","primary_position":"C","jersey_number":"15","experience":"1","college":"Vanderbilt","birth_place":"Baton
+        Rouge, LA, USA","birthdate":"1995-06-30","updated":"2018-03-25T19:56:29+00:00","reference":"1627745","draft":{"team_id":"583ec825-fb46-11e1-82cb-f4ce4684ea4c","year":2016,"round":"1","pick":"30"}},{"id":"48a2b27a-87a2-4051-ad03-c95a026ca772","status":"ACT","full_name":"Zaza
+        Pachulia","first_name":"Zaza","last_name":"Pachulia","abbr_name":"Z.Pachulia","height":83,"weight":270,"position":"C","primary_position":"C","jersey_number":"27","experience":"14","birth_place":"Tbilisi,,
+        GEO","birthdate":"1984-02-10","updated":"2017-10-17T19:37:08+00:00","reference":"2585","draft":{"team_id":"583ed157-fb46-11e1-82cb-f4ce4684ea4c","year":2003,"round":"2","pick":"42"}},{"id":"4e152a06-673e-4701-b115-aa7e2cd00d2d","status":"ACT","full_name":"Klay
+        Thompson","first_name":"Klay","last_name":"Thompson","abbr_name":"K.Thompson","height":79,"weight":215,"position":"G","primary_position":"SG","jersey_number":"11","experience":"6","college":"Washington
+        State","birth_place":"Los Angeles, CA, USA","birthdate":"1990-02-08","updated":"2017-10-17T19:37:08+00:00","reference":"202691","draft":{"team_id":"583ec825-fb46-11e1-82cb-f4ce4684ea4c","year":2011,"round":"1","pick":"11"}},{"id":"53f2fa48-e61b-49fb-843d-8a3e872257eb","status":"ACT","full_name":"Kevin
+        Durant","first_name":"Kevin","last_name":"Durant","abbr_name":"K.Durant","height":81,"weight":240,"position":"F","primary_position":"SF","jersey_number":"35","experience":"10","college":"Texas","birth_place":"Washington,
+        DC, USA","birthdate":"1988-09-29","updated":"2017-10-17T19:37:08+00:00","reference":"201142","draft":{"team_id":"583ecfff-fb46-11e1-82cb-f4ce4684ea4c","year":2007,"round":"1","pick":"2"}},{"id":"5e5099d1-4a58-43f2-8d03-f2ae5dd49337","status":"ACT","full_name":"Draymond
+        Green","first_name":"Draymond","last_name":"Green","abbr_name":"D.Green","height":79,"weight":230,"position":"F","primary_position":"PF","jersey_number":"23","experience":"5","college":"Michigan
+        State","birth_place":"Saginaw, MI, USA","birthdate":"1990-03-04","updated":"2017-10-17T19:37:08+00:00","reference":"203110","draft":{"team_id":"583ec825-fb46-11e1-82cb-f4ce4684ea4c","year":2012,"round":"2","pick":"35"}},{"id":"77f1a040-ff8b-4e20-9db9-dfb6aa041585","status":"ACT","full_name":"Shaun
+        Livingston","first_name":"Shaun","last_name":"Livingston","abbr_name":"S.Livingston","height":79,"weight":192,"position":"G","primary_position":"PG","jersey_number":"34","experience":"12","high_school":"Peoria
+        Central HS (IL)","birth_place":"Peoria, IL, USA","birthdate":"1985-09-11","updated":"2017-12-06T17:26:02+00:00","reference":"2733","draft":{"team_id":"583ecdfb-fb46-11e1-82cb-f4ce4684ea4c","year":2004,"round":"1","pick":"4"}},{"id":"8ec91366-faea-4196-bbfd-b8fab7434795","status":"ACT","full_name":"Stephen
+        Curry","first_name":"Stephen","last_name":"Curry","abbr_name":"S.Curry","height":75,"weight":190,"position":"G","primary_position":"PG","jersey_number":"30","experience":"8","college":"Davidson","birth_place":"Akron,
+        OH, USA","birthdate":"1988-03-14","updated":"2017-10-17T19:37:08+00:00","reference":"201939","draft":{"team_id":"583ec825-fb46-11e1-82cb-f4ce4684ea4c","year":2009,"round":"1","pick":"7"}},{"id":"9484b30a-4e6e-4307-8b42-12fa141dee17","status":"ACT","full_name":"Quinn
+        Cook","first_name":"Quinn","last_name":"Cook","abbr_name":"Q.Cook","height":74,"weight":179,"position":"G","primary_position":"PG","jersey_number":"4","experience":"1","college":"Duke","birth_place":"Washington,
+        DC, USA","birthdate":"1993-03-23","updated":"2018-03-20T13:34:30+00:00","reference":"1626188"},{"id":"9fdcd102-1c82-4e32-b366-c93139352c75","status":"ACT","full_name":"Andre
+        Iguodala","first_name":"Andre","last_name":"Iguodala","abbr_name":"A.Iguodala","height":78,"weight":215,"position":"G-F","primary_position":"SG","jersey_number":"9","experience":"13","college":"Arizona","birth_place":"Springfield,
+        IL, USA","birthdate":"1984-01-28","updated":"2017-10-17T19:37:08+00:00","reference":"2738","draft":{"team_id":"583ec87d-fb46-11e1-82cb-f4ce4684ea4c","year":2004,"round":"1","pick":"9"}},{"id":"a5828e4a-7844-4e9c-ba68-6698094e7284","status":"NWT","full_name":"Jacob
+        Evans III","first_name":"Jacob","last_name":"Evans","abbr_name":"J.Evans","height":78,"weight":200,"position":"F-G","primary_position":"SF","experience":"0","college":"Cincinnati","birth_place":"Jacksonville,
+        NC, USA","birthdate":"1997-06-18","updated":"2018-06-22T02:30:47+00:00","draft":{"team_id":"583ec825-fb46-11e1-82cb-f4ce4684ea4c","year":2018,"round":"1","pick":"28"}},{"id":"d323405a-4655-4261-b0fa-9524523143a1","status":"ACT","full_name":"Nick
+        Young","first_name":"Nick","last_name":"Young","abbr_name":"N.Young","height":79,"weight":210,"position":"G-F","primary_position":"SG","jersey_number":"6","experience":"10","college":"Southern
+        California","birth_place":"Los Angeles, CA, USA","birthdate":"1985-06-01","updated":"2018-01-18T16:14:18+00:00","reference":"201156","draft":{"team_id":"583ec8d4-fb46-11e1-82cb-f4ce4684ea4c","year":2007,"round":"1","pick":"16"}},{"id":"ebb50069-6fdf-4c07-9a21-a63d5c814536","status":"ACT","full_name":"Kevon
+        Looney","first_name":"Kevon","last_name":"Looney","abbr_name":"K.Looney","height":81,"weight":220,"position":"F","primary_position":"PF","jersey_number":"5","experience":"2","college":"UCLA","birth_place":"Milwaukee,
+        WI, USA","birthdate":"1996-02-06","updated":"2017-10-17T19:37:08+00:00","reference":"1626172","draft":{"team_id":"583ec825-fb46-11e1-82cb-f4ce4684ea4c","year":2015,"round":"1","pick":"30"}},{"id":"f01d5d8d-f949-437a-a23f-3835c0939ced","status":"ACT","full_name":"Chris
+        Boucher","first_name":"Chris","last_name":"Boucher","abbr_name":"C.Boucher","height":82,"weight":200,"position":"F","primary_position":"PF","jersey_number":"25","experience":"0","college":"Oregon","birth_place":"Montreal,
+        QC, CAN","birthdate":"1993-01-11","updated":"2018-06-20T20:17:15+00:00","reference":"1628449","draft":{"year":2017}}]}'
+    http_version: 
+  recorded_at: Sun, 24 Jun 2018 17:30:13 GMT
+recorded_with: VCR 4.0.0

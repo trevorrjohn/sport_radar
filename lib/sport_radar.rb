@@ -5,6 +5,7 @@ require "sport_radar/config"
 require "sport_radar/request"
 require "sport_radar/nfl/v2"
 require "sport_radar/nfl"
+require "sport_radar/nba/v4"
 
 module SportRadar
   class << self

@@ -12,6 +12,12 @@ module SportRadar
       @nfl
     end
 
+    def nba
+      @nba ||= Sport.new('NBA', 4)
+      yield(@nba) if block_given?
+      @nba
+    end
+
     class Sport
       attr_reader :sport
 
