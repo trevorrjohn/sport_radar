@@ -21,6 +21,7 @@ module SportRadar
           version_name = "v#{version}"
           instance_variable_set(
             "@#{version_name}", Version.new(sport, version))
+
           self.class.define_method(version_name.to_sym) do |&block|
             instance_variable_get("@#{version_name}").tap do |ivar|
               block.call(ivar) if block

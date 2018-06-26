@@ -5,7 +5,7 @@ module SportRadar
     require "net/http"
     require "multi_json"
 
-    BASE_URL = "https://api.sportradar.us"
+    HOST = "https://api.sportradar.us"
     FORMAT_AND_API_KEY = ".json?api_key=%{api_key}"
 
     def get(path)
@@ -19,7 +19,7 @@ module SportRadar
     end
 
     def build_url(path)
-      BASE_URL + path + FORMAT_AND_API_KEY % { api_key: api_key }
+      HOST + path + FORMAT_AND_API_KEY % { api_key: api_key }
     end
   end
 end

@@ -1,0 +1,403 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.sportradar.us/nfl-<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>2/games/b1dbf64f-822a-49b7-9bf3-070f5d6da827/roster.json?api_key=<NFL_SPORT_RADAR_V2_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.sportradar.us
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '0'
+      Cache-Control:
+      - public, must-revalidate, max-age=121
+      Content-Language:
+      - en
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 26 Jun 2018 02:25:48 GMT
+      Expires:
+      - Tue, 26 Jun 2018 02:27:49 GMT
+      Server:
+      - nginx
+      Via:
+      - 1.1 varnish-v4
+      - 1.1 varnish-v4
+      X-Be-Cache:
+      - MISS
+      X-Fe-Cache:
+      - MISS
+      X-Mashery-Responder:
+      - prod-j-worker-us-east-1d-59.mashery.com
+      X-Plan-Qps-Current:
+      - '1'
+      X-Varnish:
+      - '4810923'
+      - '9489857'
+      X-Via:
+      - Delivery-Proxy
+      Content-Length:
+      - '64875'
+      Connection:
+      - keep-alive
+      X-Plan-Qps-All<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>ted:
+      - '1'
+      X-Plan-Qu<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>a-All<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>ted:
+      - '1000'
+      X-Plan-Qu<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>a-Current:
+      - '144'
+    body:
+      encoding: UTF-8
+      string: '{"id":"b1dbf64f-822a-49b7-9bf3-070f5d6da827","status":"closed","reference":"57428","number":195,"scheduled":"2017-12-10T18:00:00+00:00","attendance":73728,"utc_offset":-5,"entry_mode":"INGEST","weather":"Sunny
+        Temp: 41 F, Humidity: 49%, Wind: West 5 mph","clock":"00:00","quarter":4,"summary":{"season":{"id":"3cf0e8ec-048d-4872-a706-b248c198831c","year":2017,"type":"REG","name":"REG"},"week":{"id":"d3bb33eb-c232-4ce1-95a6-b4e54edeb8d3","sequence":14,"title":"14"},"venue":{"id":"39be9ed4-3292-49ac-8699-a381de3a4969","name":"Bank
+        of America Stadium","city":"Charl<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>te","state":"NC","country":"USA","zip":"28202","address":"800
+        South Mint Street","capacity":73778,"surface":"turf","roof_type":"outdoor"},"home":{"id":"f14bf5cc-9a82-4a38-bc15-d39f75ed5314","name":"Panthers","market":"Carolina","alias":"CAR","reference":"5040"},"away":{"id":"33405046-04ee-4058-a950-d606f8c30852","name":"Vikings","market":"Minnes<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>a","alias":"MIN","reference":"5027"}},"home":{"id":"f14bf5cc-9a82-4a38-bc15-d39f75ed5314","name":"Panthers","market":"Carolina","alias":"CAR","reference":"5040","players":[{"id":"2d19098b-f154-4b28-976d-79182af014df","name":"Star
+        L<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>ulelei","jersey":"98","last_name":"L<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>ulelei","first_name":"Star","abbr_name":"S.L<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>ulelei","preferred_name":"Star","birth_date":"1989-12-20","weight":315.0,"height":74,"position":"DT","age":27,"birth_place":",,
+        TON","high_school":"Bingham (UT)","college":"Utah","college_conf":"Pacific
+        Twelve Conference","rookie_year":2013,"status":"started","draft":{"year":2013,"round":1,"number":14,"team":{"id":"f14bf5cc-9a82-4a38-bc15-d39f75ed5314","name":"Panthers","market":"Carolina","alias":"CAR"}},"references":[{"id":"00-0030455","origin":"gsis"},{"id":"39960","origin":"nflx"}]},{"id":"c058f888-ff75-4f13-a9e7-3f5be65288bf","name":"Julius
+        Peppers","jersey":"90","last_name":"Peppers","first_name":"Julius","abbr_name":"J.Peppers","preferred_name":"Julius","birth_date":"1980-01-18","weight":295.0,"height":79,"position":"DE","age":37,"birth_place":"Wilson,
+        NC, USA","high_school":"Southern Nash (NC)","college":"North Carolina","college_conf":"Atlantic
+        Coast Conference","rookie_year":2002,"status":"started","draft":{"year":2002,"round":1,"number":2,"team":{"id":"f14bf5cc-9a82-4a38-bc15-d39f75ed5314","name":"Panthers","market":"Carolina","alias":"CAR"}},"references":[{"id":"27132","origin":"nflx"},{"id":"00-0021140","origin":"gsis"}]},{"id":"96341b4d-152a-4020-b68a-3ff93e1baba5","name":"Trai
+        Turner","jersey":"70","last_name":"Turner","first_name":"Trai","abbr_name":"T.Turner","preferred_name":"Trai","birth_date":"1993-06-14","weight":315.0,"height":75,"position":"G","age":24,"birth_place":"New
+        Orleans, LA, USA","high_school":"St. Augustine (LA)","college":"Louisiana
+        State","college_conf":"Southeastern Conference","rookie_year":2014,"status":"started","draft":{"year":2014,"round":3,"number":92,"team":{"id":"f14bf5cc-9a82-4a38-bc15-d39f75ed5314","name":"Panthers","market":"Carolina","alias":"CAR"}},"references":[{"id":"41321","origin":"nflx"},{"id":"00-0031362","origin":"gsis"}]},{"id":"96a1fc85-5af7-49fa-a5ac-ddc06c205ced","name":"Jonathan
+        Stewart","jersey":"28","last_name":"Stewart","first_name":"Jonathan","abbr_name":"J.Stewart","preferred_name":"Jonathan","birth_date":"1987-03-21","weight":240.0,"height":70,"position":"RB","age":30,"birth_place":"Fort
+        Lewis, WA, USA","high_school":"Timberline (WA)","college":"Oregon","college_conf":"Pacific
+        Ten Conference","rookie_year":2008,"status":"started","draft":{"year":2008,"round":1,"number":13,"team":{"id":"f14bf5cc-9a82-4a38-bc15-d39f75ed5314","name":"Panthers","market":"Carolina","alias":"CAR"}},"references":[{"id":"00-0026153","origin":"gsis"},{"id":"33094","origin":"nflx"}]},{"id":"5f3cc875-e802-46b2-81ad-3ffb7a3a1662","name":"Michael
+        Palardy","jersey":"05","last_name":"Palardy","first_name":"Michael","abbr_name":"M.Palardy","preferred_name":"Michael","birth_date":"1992-07-06","weight":200.0,"height":71,"position":"P","age":25,"birth_place":"Margate,
+        FL, USA","high_school":"St. Thomas Aquinas (FL)","college":"Tennessee","college_conf":"Southeastern
+        Conference","rookie_year":2014,"status":"played","references":[{"id":"00-0031363","origin":"gsis"},{"id":"42098","origin":"nflx"}]},{"id":"fc506583-7edf-4e40-8047-83f60bea67a2","name":"Colin
+        Jones","jersey":"42","last_name":"Jones","first_name":"Colin","abbr_name":"C.Jones","preferred_name":"Colin","birth_date":"1987-10-27","weight":205.0,"height":72,"position":"S","age":30,"birth_place":"Bridgeport,
+        TX, USA","high_school":"Bridgeport (TX)","college":"Texas Christian","college_conf":"Mountain
+        West Conference","rookie_year":2011,"status":"started","draft":{"year":2011,"round":6,"number":190,"team":{"id":"f0e724b0-4cbf-495a-be47-013907608da9","name":"49ers","market":"San
+        Francisco","alias":"SF"}},"references":[{"id":"00-0028128","origin":"gsis"},{"id":"37265","origin":"nflx"}]},{"id":"972d6237-1b3b-4b6b-a789-b5ca8391ed90","name":"Ladarius
+        Gunter","jersey":"23","last_name":"Gunter","first_name":"Ladarius","abbr_name":"L.Gunter","preferred_name":"Ladarius","birth_date":"1992-05-13","weight":201.0,"height":74,"position":"CB","age":25,"birth_place":"Montgomery,
+        AL, USA","high_school":"Jefferson Davis High School (AL)","college":"Miami","college_conf":"Atlantic
+        Coast Conference","rookie_year":2015,"status":"deactivated","references":[{"id":"42860","origin":"nflx"},{"id":"00-0031829","origin":"gsis"}]},{"id":"284f5b6f-cb48-42b6-97be-d1957e4d0bdb","name":"Spencer
+        Paysinger","jersey":"56","last_name":"Paysinger","first_name":"Spencer","abbr_name":"S.Paysinger","preferred_name":"Spencer","birth_date":"1988-06-28","weight":236.0,"height":74,"position":"LB","age":29,"birth_place":"Los
+        Angeles, CA, USA","high_school":"Beverly Hills (CA)","college":"Oregon","college_conf":"Pacific
+        Twelve Conference","rookie_year":2011,"status":"played","references":[{"id":"00-0028368","origin":"gsis"},{"id":"37635","origin":"nflx"}]},{"id":"63f8a401-f308-4463-9d0b-4335b98da682","name":"Graham
+        Gano","jersey":"09","last_name":"Gano","first_name":"Graham","abbr_name":"G.Gano","preferred_name":"Graham","birth_date":"1987-04-09","weight":202.0,"height":74,"position":"K","age":30,"birth_place":"Arbroath,,
+        GBR","high_school":"Tate (FL)","college":"Florida State","college_conf":"Atlantic
+        Coast Conference","rookie_year":2009,"status":"played","references":[{"id":"00-0026858","origin":"gsis"},{"id":"35102","origin":"nflx"}]},{"id":"587d0a98-7ec5-45a5-adba-8af26e8f256b","name":"Greg
+        Olsen","jersey":"88","last_name":"Olsen","first_name":"Greg","abbr_name":"G.Olsen","preferred_name":"Greg","birth_date":"1985-03-11","weight":255.0,"height":77,"position":"TE","age":32,"birth_place":"Paterson,
+        NJ, USA","high_school":"Wayne Hills (NJ)","college":"Miami","college_conf":"Atlantic
+        Coast Conference","rookie_year":2007,"status":"started","draft":{"year":2007,"round":1,"number":31,"team":{"id":"7b112545-38e6-483c-a55c-96cf6ee49cb8","name":"Bears","market":"Chicago","alias":"CHI"}},"references":[{"id":"32224","origin":"nflx"},{"id":"00-0025418","origin":"gsis"}]},{"id":"c5f35a06-791b-43e1-befc-df0c54b3b486","name":"Kaelin
+        Clay","jersey":"12","last_name":"Clay","first_name":"Kaelin","abbr_name":"K.Clay","preferred_name":"Kaelin","birth_date":"1992-01-03","weight":195.0,"height":70,"position":"WR","age":25,"birth_place":"Long
+        Beach, CA, USA","high_school":"Long Beach (CA) Poly","college":"Utah","college_conf":"Pacific
+        Twelve Conference","rookie_year":2015,"status":"played","draft":{"year":2015,"round":6,"number":184,"team":{"id":"4254d319-1bc7-4f81-b4ab-b5e6f3402b69","name":"Buccaneers","market":"Tampa
+        Bay","alias":"TB"}},"references":[{"id":"00-0032115","origin":"gsis"},{"id":"42527","origin":"nflx"}]},{"id":"c8af316c-0e46-41ab-bce5-e63a1730c356","name":"Thomas
+        Davis","jersey":"58","last_name":"Davis","first_name":"Thomas","abbr_name":"T.Davis","preferred_name":"Thomas","birth_date":"1983-03-22","weight":235.0,"height":73,"position":"LB","age":34,"birth_place":"Shellman,
+        GA, USA","high_school":"Randolph-Clay (GA)","college":"Georgia","college_conf":"Southeastern
+        Conference","rookie_year":2005,"status":"started","draft":{"year":2005,"round":1,"number":14,"team":{"id":"f14bf5cc-9a82-4a38-bc15-d39f75ed5314","name":"Panthers","market":"Carolina","alias":"CAR"}},"references":[{"id":"29839","origin":"nflx"},{"id":"00-0023448","origin":"gsis"}]},{"id":"44ac9500-8fd8-4512-a5af-d63bc00aea7f","name":"Fozzy
+        Whittaker","jersey":"43","last_name":"Whittaker","first_name":"Fozzy","abbr_name":"F.Whittaker","preferred_name":"Fozzy","birth_date":"1989-02-02","weight":205.0,"height":70,"position":"RB","age":28,"birth_place":"Houston,
+        TX, USA","high_school":"Pearland (TX)","college":"Texas","college_conf":"Big
+        Twelve Conference","rookie_year":2013,"status":"played","references":[{"id":"00-0029731","origin":"gsis"},{"id":"39857","origin":"nflx"}]},{"id":"e2ee3901-8de4-4585-a6ca-b7d77d271d9e","name":"J.J.
+        Jansen","jersey":"44","last_name":"Jansen","first_name":"J.J.","abbr_name":"J.Jansen","preferred_name":"J.J.","birth_date":"1986-01-20","weight":235.0,"height":74,"position":"LS","age":31,"birth_place":"Phoenix,
+        AZ, USA","high_school":"Brophy Prep (AZ)","college":"N<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>re
+        Dame","college_conf":"Independent","rookie_year":2008,"status":"played","references":[{"id":"33557","origin":"nflx"},{"id":"00-0026027","origin":"gsis"}]},{"id":"ea2fda83-2817-4884-9e85-973263a4e069","name":"Mario
+        Addison","jersey":"97","last_name":"Addison","first_name":"Mario","abbr_name":"M.Addison","preferred_name":"Mario","birth_date":"1987-09-06","weight":260.0,"height":75,"position":"DE","age":30,"birth_place":"Birmingham,
+        AL, USA","high_school":"Tarrant City (AL)","college":"Troy","college_conf":"Sun
+        Belt Conference","rookie_year":2011,"status":"started","references":[{"id":"37841","origin":"nflx"},{"id":"00-0028339","origin":"gsis"}]},{"id":"73e84e89-4bd3-480e-b862-68502c8c295a","name":"Vernon
+        Butler","jersey":"92","last_name":"Butler","first_name":"Vernon","abbr_name":"V.Butler","preferred_name":"Vernon","birth_date":"1994-06-14","weight":330.0,"height":76,"position":"DT","age":23,"birth_place":"Pike
+        County, MS, USA","high_school":"North Pike (MS)","college":"Louisiana Tech","college_conf":"Conference
+        USA","rookie_year":2016,"status":"played","draft":{"year":2016,"round":1,"number":30,"team":{"id":"f14bf5cc-9a82-4a38-bc15-d39f75ed5314","name":"Panthers","market":"Carolina","alias":"CAR"}},"references":[{"id":"43319","origin":"nflx"},{"id":"00-0032967","origin":"gsis"}]},{"id":"cbce4c7c-b22f-48de-b653-cdc19f9a6320","name":"Daryl
+        Worley","jersey":"26","last_name":"Worley","first_name":"Daryl","abbr_name":"D.Worley","preferred_name":"Daryl","birth_date":"1995-02-22","weight":205.0,"height":73,"position":"CB","age":22,"birth_place":"Philadelphia,
+        PA, USA","high_school":"William Penn Charter (PA)","college":"West Virginia","college_conf":"Big
+        Twelve Conference","rookie_year":2016,"status":"started","draft":{"year":2016,"round":3,"number":77,"team":{"id":"f14bf5cc-9a82-4a38-bc15-d39f75ed5314","name":"Panthers","market":"Carolina","alias":"CAR"}},"references":[{"id":"43366","origin":"nflx"},{"id":"00-0032891","origin":"gsis"}]},{"id":"72fbe462-91c5-4c84-9640-e8ad7cad6447","name":"Derek
+        Anderson","jersey":"03","last_name":"Anderson","first_name":"Derek","abbr_name":"D.Anderson","preferred_name":"Derek","birth_date":"1983-06-15","weight":235.0,"height":78,"position":"QB","age":34,"birth_place":"Portland,
+        OR, USA","high_school":"Scappoose (OR)","college":"Oregon State","college_conf":"Pacific
+        Ten Conference","rookie_year":2005,"status":"dnp","draft":{"year":2005,"round":6,"number":213,"team":{"id":"ebd87119-b331-4469-9ea6-d51fe3ce2f1c","name":"Ravens","market":"Baltimore","alias":"BAL"}},"references":[{"id":"30041","origin":"nflx"},{"id":"00-0023645","origin":"gsis"}]},{"id":"214e55e4-a089-412d-9598-a16495df0d25","name":"Cam
+        Newton","jersey":"01","last_name":"Newton","first_name":"Cam","abbr_name":"C.Newton","preferred_name":"Cam","birth_date":"1989-05-11","weight":245.0,"height":77,"position":"QB","age":28,"birth_place":"Atlanta,
+        GA, USA","high_school":"Westlake (GA)","college":"Auburn","college_conf":"Southeastern
+        Conference","rookie_year":2011,"status":"started","draft":{"year":2011,"round":1,"number":1,"team":{"id":"f14bf5cc-9a82-4a38-bc15-d39f75ed5314","name":"Panthers","market":"Carolina","alias":"CAR"}},"references":[{"id":"00-0027939","origin":"gsis"},{"id":"37074","origin":"nflx"}]},{"id":"9dc422e6-f4ce-4bc9-b8bc-7ff946b51a8b","name":"Captain
+        Munnerlyn","jersey":"41","last_name":"Munnerlyn","first_name":"Captain","abbr_name":"C.Munnerlyn","preferred_name":"Captain","birth_date":"1988-04-10","weight":195.0,"height":69,"position":"CB","age":29,"birth_place":"Mobile,
+        AL, USA","high_school":"S.S. Murphy (AL)","college":"South Carolina","college_conf":"Southeastern
+        Conference","rookie_year":2009,"status":"played","draft":{"year":2009,"round":7,"number":216,"team":{"id":"f14bf5cc-9a82-4a38-bc15-d39f75ed5314","name":"Panthers","market":"Carolina","alias":"CAR"}},"references":[{"id":"34667","origin":"nflx"},{"id":"00-0026944","origin":"gsis"}]},{"id":"56073e7b-84ca-4d4a-a2e7-1bfc0277e8d4","name":"Garrett
+        Gilbert","jersey":"04","last_name":"Gilbert","first_name":"Garrett","abbr_name":"G.Gilbert","preferred_name":"Garrett","birth_date":"1991-07-01","weight":230.0,"height":76,"position":"QB","age":26,"birth_place":"Buffalo,
+        NY","high_school":"Lake Travis (TX)","college":"Southern Methodist","college_conf":"American
+        Athletic Conference","rookie_year":2014,"status":"deactivated","references":[{"id":"41443","origin":"nflx"},{"id":"00-0031395","origin":"gsis"}]},{"id":"6b49d038-966e-40b9-bb1e-fb4e94543a95","name":"Wes
+        Horton","jersey":"96","last_name":"Horton","first_name":"Wes","abbr_name":"W.Horton","preferred_name":"Wes","birth_date":"1990-01-18","weight":265.0,"height":77,"position":"DE","age":27,"birth_place":"Sherman
+        Oaks, CA, USA","high_school":"N<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>re Dame (CA)","college":"Southern
+        California","college_conf":"Pacific Twelve Conference","rookie_year":2013,"status":"played","references":[{"id":"40711","origin":"nflx"},{"id":"00-0030251","origin":"gsis"}]},{"id":"e431a42b-5abe-49de-9c8c-f143f393591c","name":"Kevon
+        Seymour","jersey":"27","last_name":"Seymour","first_name":"Kevon","abbr_name":"K.Seymour","preferred_name":"Kevon","birth_date":"1993-11-30","weight":185.0,"height":72,"position":"CB","age":24,"birth_place":"Pasadena,
+        CA, USA","high_school":"Muir","college":"Southern California","college_conf":"Pacific
+        Twelve Conference","rookie_year":2016,"status":"played","draft":{"year":2016,"round":6,"number":218,"team":{"id":"768c92aa-75ff-4a43-bcc0-f2798c2e1724","name":"Bills","market":"Buffalo","alias":"BUF"}},"references":[{"id":"43507","origin":"nflx"},{"id":"00-0032942","origin":"gsis"}]},{"id":"7f5f2a81-ac40-420c-9421-5b9e2a21faf8","name":"Devin
+        Funchess","jersey":"17","last_name":"Funchess","first_name":"Devin","abbr_name":"D.Funchess","preferred_name":"Devin","birth_date":"1994-05-21","weight":225.0,"height":76,"position":"WR","age":23,"birth_place":"Farmington
+        Hills, MI, USA","high_school":"Harrison (MI)","college":"Michigan","college_conf":"Big
+        Ten Conference","rookie_year":2015,"status":"started","draft":{"year":2015,"round":2,"number":41,"team":{"id":"f14bf5cc-9a82-4a38-bc15-d39f75ed5314","name":"Panthers","market":"Carolina","alias":"CAR"}},"references":[{"id":"00-0032055","origin":"gsis"},{"id":"42384","origin":"nflx"}]},{"id":"d9168af9-6bf7-47de-ba56-19d6a3a4548b","name":"Matt
+        Kalil","jersey":"75","last_name":"Kalil","first_name":"Matt","abbr_name":"M.Kalil","preferred_name":"Matt","birth_date":"1989-07-06","weight":315.0,"height":79,"position":"T","age":28,"birth_place":"Corona,
+        CA, USA","high_school":"Servite (CA)","college":"Southern California","college_conf":"Pacific
+        Twelve Conference","rookie_year":2012,"status":"started","draft":{"year":2012,"round":1,"number":4,"team":{"id":"33405046-04ee-4058-a950-d606f8c30852","name":"Vikings","market":"Minnes<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>a","alias":"MIN"}},"references":[{"id":"38534","origin":"nflx"},{"id":"00-0029687","origin":"gsis"}]},{"id":"b167835a-3f62-4755-9acd-319c5a3903e3","name":"Daryl
+        Williams","jersey":"60","last_name":"Williams","first_name":"Daryl","abbr_name":"D.Williams","preferred_name":"Daryl","birth_date":"1992-08-31","weight":330.0,"height":78,"position":"T","age":25,"birth_place":"Newport
+        News, VA, USA","high_school":"Lake Dallas (TX)","college":"Oklahoma","college_conf":"Big
+        Twelve Conference","rookie_year":2015,"status":"started","draft":{"year":2015,"round":4,"number":102,"team":{"id":"f14bf5cc-9a82-4a38-bc15-d39f75ed5314","name":"Panthers","market":"Carolina","alias":"CAR"}},"references":[{"id":"42445","origin":"nflx"},{"id":"00-0031567","origin":"gsis"}]},{"id":"6195ddc9-ab2b-469a-b824-a890736d6db7","name":"Russell
+        Shepard","jersey":"19","last_name":"Shepard","first_name":"Russell","abbr_name":"R.Shepard","preferred_name":"Russell","birth_date":"1990-09-17","weight":195.0,"height":73,"position":"WR","age":27,"birth_place":"Houston,
+        TX, USA","high_school":"Cypress Ridge (TX)","college":"Louisiana State","college_conf":"Southeastern
+        Conference","rookie_year":2013,"status":"played","references":[{"id":"00-0030147","origin":"gsis"},{"id":"40607","origin":"nflx"}]},{"id":"0f0ff562-af1c-4be8-8011-1f71e8441e00","name":"Mike
+        Adams","jersey":"29","last_name":"Adams","first_name":"Mike","abbr_name":"M.Adams","preferred_name":"Mike","birth_date":"1981-03-24","weight":205.0,"height":71,"position":"S","age":36,"birth_place":"Paterson,
+        NJ, USA","high_school":"Passaic County Technical Institute (NJ)","college":"Delaware","college_conf":"Colonial
+        Athletic Association","rookie_year":2004,"status":"started","references":[{"id":"00-0022247","origin":"gsis"},{"id":"29236","origin":"nflx"}]},{"id":"7c7b5515-7786-4e24-9ce0-34e6a8bd5727","name":"Chris
+        Manhertz","jersey":"82","last_name":"Manhertz","first_name":"Chris","abbr_name":"C.Manhertz","preferred_name":"Chris","birth_date":"1992-04-10","weight":255.0,"height":78,"position":"TE","age":25,"birth_place":"New
+        York, NY, USA","high_school":"Cardinal Spellman (NY)","college":"Canisius","college_conf":"NO
+        FOOTBALL","rookie_year":2015,"status":"played","references":[{"id":"42302","origin":"nflx"},{"id":"00-0031484","origin":"gsis"}]},{"id":"0043c962-e726-4ed2-8aa3-b0eb5cdc5567","name":"Bryan
+        Cox","jersey":"91","last_name":"Cox","first_name":"Bryan","abbr_name":"B.Cox","preferred_name":"Bryan","birth_date":"1994-06-25","weight":270.0,"height":75,"position":"DE","age":23,"birth_place":"Fort
+        Lauderdale, FL, USA","high_school":"St. Thomas Aquinas (FL)","college":"Florida","college_conf":"Southeastern
+        Conference","rookie_year":2017,"status":"played","references":[{"id":"45305","origin":"nflx"},{"id":"00-0033408","origin":"gsis"}]},{"id":"f0d837e0-54e6-496d-9334-e2d6365d16d6","name":"Kyle
+        Love","jersey":"93","last_name":"Love","first_name":"Kyle","abbr_name":"K.Love","preferred_name":"Kyle","birth_date":"1986-11-18","weight":310.0,"height":73,"position":"DT","age":31,"birth_place":",,
+        KOR","high_school":"North Clayton (GA)","college":"Mississippi State","college_conf":"Southeastern
+        Conference","rookie_year":2010,"status":"played","references":[{"id":"00-0027236","origin":"gsis"},{"id":"35743","origin":"nflx"}]},{"id":"d503e3cf-861d-4b06-8de8-f66b1b72a3bf","name":"Ryan
+        Kalil","jersey":"67","last_name":"Kalil","first_name":"Ryan","abbr_name":"R.Kalil","preferred_name":"Ryan","birth_date":"1985-03-29","weight":300.0,"height":74,"position":"C","age":32,"birth_place":"Tucson,
+        AZ, USA","high_school":"Servite (CA)","college":"Southern California","college_conf":"Pacific
+        Ten Conference","rookie_year":2007,"status":"started","draft":{"year":2007,"round":2,"number":59,"team":{"id":"f14bf5cc-9a82-4a38-bc15-d39f75ed5314","name":"Panthers","market":"Carolina","alias":"CAR"}},"references":[{"id":"32252","origin":"nflx"},{"id":"00-0025446","origin":"gsis"}]},{"id":"1289bd74-f0e2-4097-bca6-a4200ffd9171","name":"Andrew
+        Gachkar","jersey":"57","last_name":"Gachkar","first_name":"Andrew","abbr_name":"A.Gachkar","preferred_name":"Andrew","birth_date":"1988-11-04","weight":224.0,"height":74,"position":"LB","age":29,"birth_place":"Cheraw,
+        SC, USA","high_school":"Blue Valley West (KS)","college":"Missouri","college_conf":"Big
+        Twelve Conference","rookie_year":2011,"status":"played","references":[{"id":"37309","origin":"nflx"},{"id":"00-0028172","origin":"gsis"}]},{"id":"92018cf6-b194-44a9-bf07-0e20861bc6b8","name":"Jairus
+        Byrd","jersey":"31","last_name":"Byrd","first_name":"Jairus","abbr_name":"J.Byrd","preferred_name":"Jairus","birth_date":"1986-10-07","weight":203.0,"height":70,"position":"S","age":31,"birth_place":"San
+        Diego, CA, USA","high_school":"Clayton (MO)","college":"Oregon","college_conf":"Pacific
+        Ten Conference","rookie_year":2009,"status":"played","draft":{"year":2009,"round":2,"number":42,"team":{"id":"768c92aa-75ff-4a43-bcc0-f2798c2e1724","name":"Bills","market":"Buffalo","alias":"BUF"}},"references":[{"id":"34493","origin":"nflx"},{"id":"00-0027018","origin":"gsis"}]},{"id":"63175907-f9fc-4a3a-a376-d8e3a76d7964","name":"Zach
+        Moore","jersey":"77","last_name":"Moore","first_name":"Zach","abbr_name":"Z.Moore","preferred_name":"Zach","birth_date":"1990-09-05","weight":275.0,"height":78,"position":"DE","age":27,"birth_place":"Chicago,
+        IL, USA","high_school":"Simeon Academy (IL)","college":"Concordia, St. Paul","college_conf":"Northern
+        Sun Intercollegiate Conference","rookie_year":2014,"status":"deactivated","draft":{"year":2014,"round":6,"number":198,"team":{"id":"97354895-8c77-4fd4-a860-32e62ea7382a","name":"Patri<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>s","market":"New
+        England","alias":"NE"}},"references":[{"id":"00-0031081","origin":"gsis"},{"id":"41427","origin":"nflx"}]},{"id":"76ffae7b-4ff8-40c8-abee-de24873135cd","name":"Brenton
+        Bersin","jersey":"11","last_name":"Bersin","first_name":"Brenton","abbr_name":"B.Bersin","preferred_name":"Brenton","birth_date":"1990-05-09","weight":210.0,"height":75,"position":"WR","age":27,"birth_place":"Charl<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>te,
+        NC, USA","high_school":"Charl<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>te Latin (NC)","college":"Wofford","college_conf":"Southern
+        Conference","rookie_year":2012,"status":"played","references":[{"id":"00-0029394","origin":"gsis"},{"id":"39298","origin":"nflx"}]},{"id":"1b1e5bef-13e9-4814-b7ef-7970cbf103b8","name":"Tyler
+        Larsen","jersey":"69","last_name":"Larsen","first_name":"Tyler","abbr_name":"T.Larsen","preferred_name":"Tyler","birth_date":"1991-07-08","weight":325.0,"height":76,"position":"C","age":26,"birth_place":"Salt
+        Lake City, UT, USA","high_school":"Jordan (UT)","college":"Utah State","college_conf":"Mountain
+        West Conference","rookie_year":2014,"status":"deactivated","references":[{"id":"41707","origin":"nflx"},{"id":"00-0030869","origin":"gsis"}]},{"id":"0db6df51-945b-4123-a790-0ba9d0473415","name":"James
+        Bradberry","jersey":"24","last_name":"Bradberry","first_name":"James","abbr_name":"J.Bradberry","preferred_name":"James","birth_date":"1993-08-04","weight":212.0,"height":73,"position":"CB","age":24,"birth_place":"Pleasant
+        Grove, AL, USA","high_school":"Pleasant Grove (AL)","college":"Samford","college_conf":"Southern
+        Conference","rookie_year":2016,"status":"started","draft":{"year":2016,"round":2,"number":62,"team":{"id":"f14bf5cc-9a82-4a38-bc15-d39f75ed5314","name":"Panthers","market":"Carolina","alias":"CAR"}},"references":[{"id":"00-0032890","origin":"gsis"},{"id":"43351","origin":"nflx"}]},{"id":"f96db0af-5e25-42d1-a07a-49b4e065b364","name":"Christian
+        McCaffrey","jersey":"22","last_name":"McCaffrey","first_name":"Christian","abbr_name":"C.McCaffrey","preferred_name":"Christian","birth_date":"1996-06-07","weight":205.0,"height":71,"position":"RB","age":21,"birth_place":"Castle
+        Rock, CO, USA","high_school":"Valor Christian (CO)","college":"Stanford","college_conf":"Pacific
+        Twelve Conference","rookie_year":2017,"status":"started","draft":{"year":2017,"round":1,"number":8,"team":{"id":"f14bf5cc-9a82-4a38-bc15-d39f75ed5314","name":"Panthers","market":"Carolina","alias":"CAR"}},"references":[{"id":"44820","origin":"nflx"},{"id":"00-0033280","origin":"gsis"}]},{"id":"48d7bc31-808f-423c-afc8-45c2c5dfa45f","name":"Damiere
+        Byrd","jersey":"18","last_name":"Byrd","first_name":"Damiere","abbr_name":"D.Byrd","preferred_name":"Damiere","birth_date":"1993-01-27","weight":180.0,"height":69,"position":"WR","age":24,"birth_place":"Sicklerville,
+        NJ, USA","high_school":"Timber Creek Regional High (NJ)","college":"South
+        Carolina","college_conf":"Southeastern Conference","rookie_year":2015,"status":"started","references":[{"id":"00-0031868","origin":"gsis"},{"id":"42899","origin":"nflx"}]},{"id":"f413d6fb-5105-4110-b915-d92840a3e656","name":"Cameron
+        Artis-Payne","jersey":"34","last_name":"Artis-Payne","first_name":"Cameron","abbr_name":"C.Artis-Payne","preferred_name":"Cameron","birth_date":"1990-06-23","weight":215.0,"height":70,"position":"RB","age":27,"birth_place":"Harrisburg,
+        PA, USA","high_school":"Harrisburg (PA)","college":"Auburn","college_conf":"Southeastern
+        Conference","rookie_year":2015,"status":"played","draft":{"year":2015,"round":5,"number":174,"team":{"id":"f14bf5cc-9a82-4a38-bc15-d39f75ed5314","name":"Panthers","market":"Carolina","alias":"CAR"}},"references":[{"id":"42517","origin":"nflx"},{"id":"00-0031599","origin":"gsis"}]},{"id":"686cab35-6da0-4e10-ba65-0d1f97e0bc8b","name":"Alex
+        Armah","jersey":"40","last_name":"Armah","first_name":"Alex","abbr_name":"A.Armah","preferred_name":"Alex","birth_date":"1994-05-17","weight":255.0,"height":74,"position":"FB","age":23,"birth_place":"Lawrenceville,
+        GA, USA","high_school":"Dacula (GA)","college":"West Georgia","college_conf":"Gulf
+        South Conference","rookie_year":2017,"status":"deactivated","draft":{"year":2017,"round":6,"number":192,"team":{"id":"f14bf5cc-9a82-4a38-bc15-d39f75ed5314","name":"Panthers","market":"Carolina","alias":"CAR"}},"references":[{"id":"45005","origin":"nflx"},{"id":"00-0033296","origin":"gsis"}]},{"id":"123f0733-0afb-4291-8e57-9970e229309b","name":"Kawann
+        Short","jersey":"99","last_name":"Short","first_name":"Kawann","abbr_name":"K.Short","preferred_name":"Kawann","birth_date":"1989-02-02","weight":315.0,"height":75,"position":"DT","age":28,"birth_place":"East
+        Chicago, IN, USA","high_school":"Central (IN)","college":"Purdue","college_conf":"Big
+        Ten Conference","rookie_year":2013,"status":"started","draft":{"year":2013,"round":2,"number":44,"team":{"id":"f14bf5cc-9a82-4a38-bc15-d39f75ed5314","name":"Panthers","market":"Carolina","alias":"CAR"}},"references":[{"id":"39992","origin":"nflx"},{"id":"00-0030448","origin":"gsis"}]},{"id":"7bf442fb-62c6-4cf5-8d5d-a8ccd6daa80b","name":"Ben
+        Jacobs","jersey":"53","last_name":"Jacobs","first_name":"Ben","abbr_name":"B.Jacobs","preferred_name":"Ben","birth_date":"1988-04-17","weight":240.0,"height":76,"position":"LB","age":29,"birth_place":"Flat
+        River, MO, USA","high_school":"Silverado (NV)","college":"Fresno State","college_conf":"Mountain
+        West Conference","rookie_year":2011,"status":"played","references":[{"id":"00-0028698","origin":"gsis"},{"id":"38165","origin":"nflx"}]},{"id":"cbe71aae-2475-487f-a78d-c1d7f021c097","name":"Taylor
+        M<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>on","jersey":"72","last_name":"M<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>on","first_name":"Taylor","abbr_name":"T.M<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>on","preferred_name":"Taylor","birth_date":"1994-08-14","weight":325.0,"height":77,"position":"T","age":23,"birth_place":"Lansin,
+        MI, USA","high_school":"Okemos (MI)","college":"Western Michigan","college_conf":"Mid-American
+        Conference","rookie_year":2017,"status":"played","draft":{"year":2017,"round":2,"number":64,"team":{"id":"f14bf5cc-9a82-4a38-bc15-d39f75ed5314","name":"Panthers","market":"Carolina","alias":"CAR"}},"references":[{"id":"44876","origin":"nflx"},{"id":"00-0033284","origin":"gsis"}]},{"id":"40403404-4624-4bd0-b11d-ec8299c48a42","name":"Luke
+        Kuechly","jersey":"59","last_name":"Kuechly","first_name":"Luke","abbr_name":"L.Kuechly","preferred_name":"Luke","birth_date":"1991-04-20","weight":238.0,"height":75,"position":"LB","age":26,"birth_place":"Cincinnati,
+        OH, USA","high_school":"Xavier (OH)","college":"Boston College","college_conf":"Atlantic
+        Coast Conference","rookie_year":2012,"status":"started","draft":{"year":2012,"round":1,"number":9,"team":{"id":"f14bf5cc-9a82-4a38-bc15-d39f75ed5314","name":"Panthers","market":"Carolina","alias":"CAR"}},"references":[{"id":"38539","origin":"nflx"},{"id":"00-0029248","origin":"gsis"}]},{"id":"b90a3e2a-66fb-4b1a-a6de-7482fbe2d1b2","name":"Andrew
+        Norwell","jersey":"68","last_name":"Norwell","first_name":"Andrew","abbr_name":"A.Norwell","preferred_name":"Andrew","birth_date":"1991-10-25","weight":325.0,"height":78,"position":"G","age":26,"birth_place":"Cincinnati,
+        OH, USA","high_school":"Anderson (OH)","college":"Ohio State","college_conf":"Big
+        Ten Conference","rookie_year":2014,"status":"started","references":[{"id":"41939","origin":"nflx"},{"id":"00-0031122","origin":"gsis"}]},{"id":"3bf0711c-793a-47e7-bcbd-a0ddf350fef4","name":"Shaq
+        Thompson","jersey":"54","last_name":"Thompson","first_name":"Shaq","abbr_name":"S.Thompson","preferred_name":"Shaq","birth_date":"1994-04-21","weight":230.0,"height":72,"position":"LB","age":23,"birth_place":"Sacramento,
+        CA, USA","high_school":"Grant Union (CA)","college":"Washington","college_conf":"Pacific
+        Twelve Conference","rookie_year":2015,"status":"deactivated","draft":{"year":2015,"round":1,"number":25,"team":{"id":"f14bf5cc-9a82-4a38-bc15-d39f75ed5314","name":"Panthers","market":"Carolina","alias":"CAR"}},"references":[{"id":"00-0031550","origin":"gsis"},{"id":"42368","origin":"nflx"}]},{"id":"677a2fa2-55d5-4a1f-b56f-1f97b0a4b61a","name":"David
+        Mayo","jersey":"55","last_name":"Mayo","first_name":"David","abbr_name":"D.Mayo","preferred_name":"David","birth_date":"1993-08-18","weight":245.0,"height":74,"position":"LB","age":24,"birth_place":"Scapoose,
+        OR, USA","high_school":"Scapoose (OR)","college":"Texas State","college_conf":"Sun
+        Belt Conference","rookie_year":2015,"status":"played","draft":{"year":2015,"round":5,"number":169,"team":{"id":"f14bf5cc-9a82-4a38-bc15-d39f75ed5314","name":"Panthers","market":"Carolina","alias":"CAR"}},"references":[{"id":"00-0031596","origin":"gsis"},{"id":"42512","origin":"nflx"}]},{"id":"22b17923-9927-42ad-9c57-d9e89c5dd61b","name":"Amini
+        Silatolu","jersey":"65","last_name":"Silatolu","first_name":"Amini","abbr_name":"A.Silatolu","preferred_name":"Amini","birth_date":"1988-09-16","weight":305.0,"height":76,"position":"T","age":29,"birth_place":"Redwood
+        City, CA, USA","high_school":"Merrill F. West (CA)","college":"Midwestern
+        State","college_conf":"Lone Star Conference","rookie_year":2012,"status":"deactivated","draft":{"year":2012,"round":2,"number":40,"team":{"id":"f14bf5cc-9a82-4a38-bc15-d39f75ed5314","name":"Panthers","market":"Carolina","alias":"CAR"}},"references":[{"id":"38570","origin":"nflx"},{"id":"00-0029254","origin":"gsis"}]},{"id":"46bb9a85-523c-4530-95c3-2c2a9737e65f","name":"Ed
+        Dickson","jersey":"84","last_name":"Dickson","first_name":"Ed","abbr_name":"E.Dickson","preferred_name":"Ed","birth_date":"1987-07-25","weight":255.0,"height":76,"position":"TE","age":30,"birth_place":"Inglewood,
+        CA, USA","high_school":"Bellflower (CA)","college":"Oregon","college_conf":"Pacific
+        Ten Conference","rookie_year":2010,"status":"played","draft":{"year":2010,"round":3,"number":70,"team":{"id":"ebd87119-b331-4469-9ea6-d51fe3ce2f1c","name":"Ravens","market":"Baltimore","alias":"BAL"}},"references":[{"id":"00-0027675","origin":"gsis"},{"id":"35509","origin":"nflx"}]},{"id":"f1cff356-8de9-4589-8522-40922fecfad7","name":"Kurt
+        Coleman","jersey":"20","last_name":"Coleman","first_name":"Kurt","abbr_name":"K.Coleman","preferred_name":"Kurt","birth_date":"1988-07-01","weight":208.0,"height":71,"position":"S","age":29,"birth_place":"Dayton,
+        OH, USA","high_school":"Northmont (OH)","college":"Ohio State","college_conf":"Big
+        Ten Conference","rookie_year":2010,"status":"started","draft":{"year":2010,"round":7,"number":244,"team":{"id":"386bdbf9-9eea-4869-bb9a-274b0bc66e80","name":"Eagles","market":"Philadelphia","alias":"PHI"}},"references":[{"id":"00-0027835","origin":"gsis"},{"id":"35685","origin":"nflx"}]},{"id":"6d7ca819-8c58-4c41-bba7-643ba9553eb8","name":"Greg
+        Van R<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>en","jersey":"73","last_name":"Van R<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>en","first_name":"Greg","abbr_name":"G.Van
+        R<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>en","preferred_name":"Greg","birth_date":"1990-02-26","weight":305.0,"height":75,"position":"G","age":27,"birth_place":"Rockville
+        Centre, NY, USA","high_school":"Chaminade (NY)","college":"Pennsylvania","college_conf":"Ivy
+        League","rookie_year":2012,"status":"played","references":[{"id":"00-0029685","origin":"gsis"},{"id":"39684","origin":"nflx"}]}]},"away":{"id":"33405046-04ee-4058-a950-d606f8c30852","name":"Vikings","market":"Minnes<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>a","alias":"MIN","reference":"5027","players":[{"id":"ba7fe857-df63-4aed-803a-80993b157be4","name":"Danielle
+        Hunter","jersey":"99","last_name":"Hunter","first_name":"Danielle","abbr_name":"D.Hunter","preferred_name":"Danielle","birth_date":"1994-10-29","weight":252.0,"height":77,"position":"DE","age":23,"birth_place":"Katy,
+        TX, USA","high_school":"Morton Ranch (TX)","college":"Louisiana State","college_conf":"Southeastern
+        Conference","rookie_year":2015,"status":"started","draft":{"year":2015,"round":3,"number":88,"team":{"id":"33405046-04ee-4058-a950-d606f8c30852","name":"Vikings","market":"Minnes<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>a","alias":"MIN"}},"references":[{"id":"42431","origin":"nflx"},{"id":"00-0031565","origin":"gsis"}]},{"id":"16cd3b59-18a2-40a0-9236-e222bed17044","name":"Stacy
+        Coley","jersey":"13","last_name":"Coley","first_name":"Stacy","abbr_name":"S.Coley","preferred_name":"Stacy","birth_date":"1994-05-13","weight":195.0,"height":73,"position":"WR","age":23,"birth_place":"Pompano
+        Beach, FL, USA","high_school":"Northeast (FL)","college":"Miami","college_conf":"Atlantic
+        Coast Conference","rookie_year":2017,"status":"deactivated","draft":{"year":2017,"round":7,"number":219,"team":{"id":"33405046-04ee-4058-a950-d606f8c30852","name":"Vikings","market":"Minnes<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>a","alias":"MIN"}},"references":[{"id":"45032","origin":"nflx"},{"id":"00-0033968","origin":"gsis"}]},{"id":"0cc4e449-185a-4b08-9f07-c907ad0c3e05","name":"Blake
+        Bell","jersey":"81","last_name":"Bell","first_name":"Blake","abbr_name":"B.Bell","preferred_name":"Blake","birth_date":"1991-08-07","weight":252.0,"height":78,"position":"TE","age":26,"birth_place":"Wichita
+        Falls, TX, USA","high_school":"Bishop Carroll (KS)","college":"Oklahoma","college_conf":"Big
+        Twelve Conference","rookie_year":2015,"status":"started","draft":{"year":2015,"round":4,"number":117,"team":{"id":"f0e724b0-4cbf-495a-be47-013907608da9","name":"49ers","market":"San
+        Francisco","alias":"SF"}},"references":[{"id":"00-0032062","origin":"gsis"},{"id":"42460","origin":"nflx"}]},{"id":"b345f3db-d5aa-43ba-9f17-914c54864236","name":"Eric
+        Kendricks","jersey":"54","last_name":"Kendricks","first_name":"Eric","abbr_name":"E.Kendricks","preferred_name":"Eric","birth_date":"1992-02-29","weight":232.0,"height":72,"position":"LB","age":25,"birth_place":"Fresno,
+        CA, USA","high_school":"Hoover (CA)","college":"UCLA","college_conf":"Pacific
+        Twelve Conference","rookie_year":2015,"status":"started","draft":{"year":2015,"round":2,"number":45,"team":{"id":"33405046-04ee-4058-a950-d606f8c30852","name":"Vikings","market":"Minnes<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>a","alias":"MIN"}},"references":[{"id":"42388","origin":"nflx"},{"id":"00-0031554","origin":"gsis"}]},{"id":"407f1923-6659-4564-800f-25b8746d6d3e","name":"Harrison
+        Smith","jersey":"22","last_name":"Smith","first_name":"Harrison","abbr_name":"H.Smith","preferred_name":"Harrison","birth_date":"1989-02-02","weight":214.0,"height":74,"position":"S","age":28,"birth_place":"Augusta,
+        GA, USA","high_school":"Knoxville Catholic (TN)","college":"N<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>re
+        Dame","college_conf":"Independent","rookie_year":2012,"status":"started","draft":{"year":2012,"round":1,"number":29,"team":{"id":"33405046-04ee-4058-a950-d606f8c30852","name":"Vikings","market":"Minnes<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>a","alias":"MIN"}},"references":[{"id":"00-0029606","origin":"gsis"},{"id":"38559","origin":"nflx"}]},{"id":"016a6d56-0b72-490e-8dae-41b5d3d2db63","name":"Jaleel
+        Johnson","jersey":"94","last_name":"Johnson","first_name":"Jaleel","abbr_name":"J.Johnson","preferred_name":"Jaleel","birth_date":"1994-07-12","weight":316.0,"height":75,"position":"DT","age":23,"birth_place":"Lombard,
+        IL, USA","high_school":"Montini Catholic (IL)","college":"Iowa","college_conf":"Big
+        Ten Conference","rookie_year":2017,"status":"deactivated","draft":{"year":2017,"round":4,"number":109,"team":{"id":"33405046-04ee-4058-a950-d606f8c30852","name":"Vikings","market":"Minnes<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>a","alias":"MIN"}},"references":[{"id":"00-0033940","origin":"gsis"},{"id":"44922","origin":"nflx"}]},{"id":"ee305db3-cdaf-4eb3-b950-7146d51eac34","name":"Tom
+        Johnson","jersey":"92","last_name":"Johnson","first_name":"Tom","abbr_name":"T.Johnson","preferred_name":"Tom","birth_date":"1984-08-30","weight":288.0,"height":75,"position":"DT","age":33,"birth_place":"Moss
+        Point, MS, USA","high_school":"Moss Point (MS)","college":"Southern Mississippi","college_conf":"Conference
+        USA","rookie_year":2006,"status":"started","references":[{"id":"00-0024030","origin":"gsis"},{"id":"31348","origin":"nflx"}]},{"id":"4bff1c89-f4d1-4699-8c85-69bbbbaec5a2","name":"David
+        Morgan","jersey":"89","last_name":"Morgan","first_name":"David","abbr_name":"D.Morgan","preferred_name":"David","birth_date":"1993-05-19","weight":265.0,"height":76,"position":"TE","age":24,"birth_place":"Marble
+        Falls, TX, USA","high_school":"Marble Falls (TX)","college":"Texas-San Antonio","college_conf":"Conference
+        USA","rookie_year":2016,"status":"deactivated","draft":{"year":2016,"round":6,"number":188,"team":{"id":"33405046-04ee-4058-a950-d606f8c30852","name":"Vikings","market":"Minnes<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>a","alias":"MIN"}},"references":[{"id":"43477","origin":"nflx"},{"id":"00-0032430","origin":"gsis"}]},{"id":"4a69f085-8bef-4b3c-a66e-cab65b3fcb7a","name":"Terence
+        Newman","jersey":"23","last_name":"Newman","first_name":"Terence","abbr_name":"T.Newman","preferred_name":"Terence","birth_date":"1978-09-04","weight":197.0,"height":70,"position":"CB","age":39,"birth_place":"Salina,
+        KS, USA","high_school":"Salina Central (KS)","college":"Kansas State","college_conf":"Big
+        Twelve Conference","rookie_year":2003,"status":"started","draft":{"year":2003,"round":1,"number":5,"team":{"id":"e627eec7-bbae-4fa4-8e73-8e1d6bc5c060","name":"Cowboys","market":"Dallas","alias":"DAL"}},"references":[{"id":"28041","origin":"nflx"},{"id":"00-0022045","origin":"gsis"}]},{"id":"bfe704fc-266d-4f6a-afbf-c903b5934e23","name":"Eric
+        Wilson","jersey":"50","last_name":"Wilson","first_name":"Eric","abbr_name":"E.Wilson","preferred_name":"Eric","birth_date":"1994-09-26","weight":225.0,"height":74,"position":"LB","age":23,"birth_place":"Redford,
+        MI, USA","high_school":"Thurston (MI)","college":"Cincinnati","college_conf":"American
+        Athletic Conference","rookie_year":2017,"status":"played","references":[{"id":"00-0033336","origin":"gsis"},{"id":"45215","origin":"nflx"}]},{"id":"1059e9dc-97df-4643-9116-883a0573d8b1","name":"Kyle
+        Rudolph","jersey":"82","last_name":"Rudolph","first_name":"Kyle","abbr_name":"K.Rudolph","preferred_name":"Kyle","birth_date":"1989-11-09","weight":265.0,"height":78,"position":"TE","age":28,"birth_place":"Cincinnati,
+        OH, USA","high_school":"Elder (OH)","college":"N<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>re
+        Dame","college_conf":"Independent","rookie_year":2011,"status":"started","draft":{"year":2011,"round":2,"number":43,"team":{"id":"33405046-04ee-4058-a950-d606f8c30852","name":"Vikings","market":"Minnes<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>a","alias":"MIN"}},"references":[{"id":"37118","origin":"nflx"},{"id":"00-0027981","origin":"gsis"}]},{"id":"39ee3bee-1177-49cd-a78b-7a790ffd0b84","name":"Andrew
+        Sendejo","jersey":"34","last_name":"Sendejo","first_name":"Andrew","abbr_name":"A.Sendejo","preferred_name":"Andrew","birth_date":"1987-09-09","weight":210.0,"height":73,"position":"S","age":30,"birth_place":"San
+        Antonio, TX, USA","high_school":"Smithson Valley (TX)","college":"Rice","college_conf":"Conference
+        USA","rookie_year":2010,"status":"started","references":[{"id":"36712","origin":"nflx"},{"id":"00-0027914","origin":"gsis"}]},{"id":"e23505d9-b677-4a86-ba17-564c165a6e66","name":"Kyle
+        Sl<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>er","jersey":"01","last_name":"Sl<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>er","first_name":"Kyle","abbr_name":"K.Sl<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>er","preferred_name":"Kyle","birth_date":"1994-02-07","weight":218.0,"height":76,"position":"QB","age":23,"birth_place":"Atlanta,
+        GA, USA","high_school":"Mount Pisgah Christian (GA)","college":"Northern Colorado","college_conf":"Big
+        Sky Conference","rookie_year":2017,"status":"deactivated","references":[{"id":"00-0033672","origin":"gsis"},{"id":"45546","origin":"nflx"}]},{"id":"971fc9e5-bebb-4a2c-a822-8c52f92a3d07","name":"C.J.
+        Ham","jersey":"30","last_name":"Ham","first_name":"C.J.","abbr_name":"C.Ham","preferred_name":"C.J.","birth_date":"1993-07-22","weight":235.0,"height":71,"position":"FB","age":24,"birth_place":"Duluth,
+        MN, USA","high_school":"Denfeld (MN)","college":"Augustana, S.D.","college_conf":"Northern
+        Sun Intercollegiate Conference","rookie_year":2016,"status":"played","references":[{"id":"43971","origin":"nflx"},{"id":"00-0032918","origin":"gsis"}]},{"id":"4a9a26fa-6a05-4c67-a023-43773a5c67f8","name":"Jeremiah
+        Sirles","jersey":"75","last_name":"Sirles","first_name":"Jeremiah","abbr_name":"J.Sirles","preferred_name":"Jeremiah","birth_date":"1991-08-08","weight":315.0,"height":78,"position":"G","age":26,"birth_place":"Lakewood,
+        CO, USA","high_school":"Bear Creek (CO)","college":"Nebraska","college_conf":"Big
+        Ten Conference","rookie_year":2014,"status":"started","references":[{"id":"41763","origin":"nflx"},{"id":"00-0030923","origin":"gsis"}]},{"id":"9b14942e-0ddc-436c-a6be-5947a39589e5","name":"Mackensie
+        Alexander","jersey":"20","last_name":"Alexander","first_name":"Mackensie","abbr_name":"M.Alexander","preferred_name":"Mackensie","birth_date":"1993-11-12","weight":192.0,"height":70,"position":"CB","age":24,"birth_place":"Immokalee,
+        FL, USA","high_school":"Immokalee (FL)","college":"Clemson","college_conf":"Atlantic
+        Coast Conference","rookie_year":2016,"status":"played","draft":{"year":2016,"round":2,"number":54,"team":{"id":"33405046-04ee-4058-a950-d606f8c30852","name":"Vikings","market":"Minnes<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>a","alias":"MIN"}},"references":[{"id":"00-0032389","origin":"gsis"},{"id":"43343","origin":"nflx"}]},{"id":"b4e5d1c1-5915-4326-b737-d6c796da0d75","name":"Ryan
+        Quigley","jersey":"04","last_name":"Quigley","first_name":"Ryan","abbr_name":"R.Quigley","preferred_name":"Ryan","birth_date":"1990-01-26","weight":188.0,"height":75,"position":"P","age":27,"birth_place":"Little
+        River, SC, USA","high_school":"North Myrtle Beach (SC)","college":"Boston
+        College","college_conf":"Atlantic Coast Conference","rookie_year":2012,"status":"played","references":[{"id":"39375","origin":"nflx"},{"id":"00-0029493","origin":"gsis"}]},{"id":"ac568889-d10d-4ccc-89a1-8e4233848086","name":"Brian
+        Robison","jersey":"96","last_name":"Robison","first_name":"Brian","abbr_name":"B.Robison","preferred_name":"Brian","birth_date":"1983-04-27","weight":259.0,"height":75,"position":"DE","age":34,"birth_place":"Houston,
+        TX, USA","high_school":"Splendora (TX)","college":"Texas","college_conf":"Big
+        Twelve Conference","rookie_year":2007,"status":"played","draft":{"year":2007,"round":4,"number":102,"team":{"id":"33405046-04ee-4058-a950-d606f8c30852","name":"Vikings","market":"Minnes<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>a","alias":"MIN"}},"references":[{"id":"00-0025489","origin":"gsis"},{"id":"32295","origin":"nflx"}]},{"id":"688f7a3b-4d66-4fcf-802d-6a3cb133ea30","name":"Tramaine
+        Brock","jersey":"24","last_name":"Brock","first_name":"Tramaine","abbr_name":"T.Brock","preferred_name":"Tramaine","birth_date":"1988-08-20","weight":197.0,"height":70,"position":"CB","age":29,"birth_place":"Gulfport,
+        MS, USA","high_school":"Long Beach (MS)","college":"Belhaven","college_conf":"Mid-South
+        Conference","rookie_year":2010,"status":"played","references":[{"id":"00-0027375","origin":"gsis"},{"id":"35888","origin":"nflx"}]},{"id":"e1b3b636-39b5-46cf-aa7f-216b09ead7e6","name":"Shamar
+        Stephen","jersey":"93","last_name":"Stephen","first_name":"Shamar","abbr_name":"S.Stephen","preferred_name":"Shamar","birth_date":"1991-02-25","weight":310.0,"height":77,"position":"DT","age":26,"birth_place":"Brookville,
+        NY, USA","high_school":"Long Island Lutheran (NY)","college":"Connecticut","college_conf":"American
+        Athletic Conference","rookie_year":2014,"status":"played","draft":{"year":2014,"round":7,"number":220,"team":{"id":"33405046-04ee-4058-a950-d606f8c30852","name":"Vikings","market":"Minnes<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>a","alias":"MIN"}},"references":[{"id":"00-0031242","origin":"gsis"},{"id":"41449","origin":"nflx"}]},{"id":"6e150bf7-49da-4d65-9b8e-e39dc074c539","name":"Nick
+        Easton","jersey":"62","last_name":"Easton","first_name":"Nick","abbr_name":"N.Easton","preferred_name":"Nick","birth_date":"1992-06-16","weight":303.0,"height":75,"position":"G","age":25,"birth_place":"Lenoir,
+        NC, USA","high_school":"Hibriten (NC)","college":"Harvard","college_conf":"Ivy
+        League","rookie_year":2015,"status":"started","references":[{"id":"00-0031765","origin":"gsis"},{"id":"42796","origin":"nflx"}]},{"id":"6c48b2a7-924e-43ec-bcd9-f1cda06b2332","name":"Linval
+        Joseph","jersey":"98","last_name":"Joseph","first_name":"Linval","abbr_name":"L.Joseph","preferred_name":"Linval","birth_date":"1988-10-10","weight":329.0,"height":76,"position":"DT","age":29,"birth_place":"Saint
+        Croix,, VIR","high_school":"Santa Fe (FL)","college":"East Carolina","college_conf":"Conference
+        USA","rookie_year":2010,"status":"started","draft":{"year":2010,"round":2,"number":46,"team":{"id":"04aa1c9d-66da-489d-b16a-1dee3f2eec4d","name":"Giants","market":"New
+        York","alias":"NYG"}},"references":[{"id":"35485","origin":"nflx"},{"id":"00-0027885","origin":"gsis"}]},{"id":"708e045b-17fd-4f81-87e3-8686b165a278","name":"Jayron
+        Kearse","jersey":"27","last_name":"Kearse","first_name":"Jayron","abbr_name":"J.Kearse","preferred_name":"Jayron","birth_date":"1994-02-11","weight":215.0,"height":76,"position":"S","age":23,"birth_place":"Fort
+        Myers, FL, USA","high_school":"South Fort Myers (FL)","college":"Clemson","college_conf":"Atlantic
+        Coast Conference","rookie_year":2016,"status":"played","draft":{"year":2016,"round":7,"number":244,"team":{"id":"33405046-04ee-4058-a950-d606f8c30852","name":"Vikings","market":"Minnes<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>a","alias":"MIN"}},"references":[{"id":"00-0032454","origin":"gsis"},{"id":"43533","origin":"nflx"}]},{"id":"8048bdd1-62cf-4d01-8257-741a585dae8e","name":"Riley
+        Reiff","jersey":"71","last_name":"Reiff","first_name":"Riley","abbr_name":"R.Reiff","preferred_name":"Riley","birth_date":"1988-12-01","weight":305.0,"height":78,"position":"T","age":29,"birth_place":"Parkston,
+        SD, USA","high_school":"Parkston HS (SD)","college":"Iowa","college_conf":"Big
+        Ten Conference","rookie_year":2012,"status":"started","draft":{"year":2012,"round":1,"number":23,"team":{"id":"c5a59daa-53a7-4de0-851f-fb12be893e9e","name":"Lions","market":"Detroit","alias":"DET"}},"references":[{"id":"00-0029672","origin":"gsis"},{"id":"38553","origin":"nflx"}]},{"id":"3f6b7426-8fc2-44c8-9cba-9d6234e9d43d","name":"Emmanuel
+        Lamur","jersey":"59","last_name":"Lamur","first_name":"Emmanuel","abbr_name":"E.Lamur","preferred_name":"Emmanuel","birth_date":"1989-06-08","weight":245.0,"height":76,"position":"LB","age":28,"birth_place":"West
+        Palm Beach, FL, USA","high_school":"King''s Academy (FL)","college":"Kansas
+        State","college_conf":"Big Twelve Conference","rookie_year":2012,"status":"played","references":[{"id":"39361","origin":"nflx"},{"id":"00-0029479","origin":"gsis"}]},{"id":"471dbe81-54c4-4b52-8bd1-4933c9800e1f","name":"Michael
+        Floyd","jersey":"18","last_name":"Floyd","first_name":"Michael","abbr_name":"M.Floyd","preferred_name":"Michael","birth_date":"1989-11-27","weight":220.0,"height":74,"position":"WR","age":28,"birth_place":"St.
+        Paul, MN, USA","high_school":"Cretin-Derham Hall (MN)","college":"N<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>re
+        Dame","college_conf":"Independent","rookie_year":2012,"status":"played","draft":{"year":2012,"round":1,"number":13,"team":{"id":"de760528-1dc0-416a-a978-b510d20692ff","name":"Cardinals","market":"Arizona","alias":"ARI"}},"references":[{"id":"00-0029638","origin":"gsis"},{"id":"38543","origin":"nflx"}]},{"id":"f77479d7-51a5-41f9-8924-69526dd078cd","name":"Jerick
+        McKinnon","jersey":"21","last_name":"McKinnon","first_name":"Jerick","abbr_name":"J.McKinnon","preferred_name":"Jerick","birth_date":"1992-05-03","weight":205.0,"height":69,"position":"RB","age":25,"birth_place":"Atlanta,
+        GA, USA","high_school":"Sprayberry (GA)","college":"Georgia Southern","college_conf":"Southern
+        Conference","rookie_year":2014,"status":"played","draft":{"year":2014,"round":3,"number":96,"team":{"id":"33405046-04ee-4058-a950-d606f8c30852","name":"Vikings","market":"Minnes<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>a","alias":"MIN"}},"references":[{"id":"41325","origin":"nflx"},{"id":"00-0031376","origin":"gsis"}]},{"id":"23616a22-8266-4b0c-b0b9-5f8187178168","name":"Anthony
+        Barr","jersey":"55","last_name":"Barr","first_name":"Anthony","abbr_name":"A.Barr","preferred_name":"Anthony","birth_date":"1992-03-18","weight":255.0,"height":77,"position":"LB","age":25,"birth_place":"San
+        Pedro, CA, USA","high_school":"Loyola (CA)","college":"UCLA","college_conf":"Pacific
+        Twelve Conference","rookie_year":2014,"status":"started","draft":{"year":2014,"round":1,"number":9,"team":{"id":"33405046-04ee-4058-a950-d606f8c30852","name":"Vikings","market":"Minnes<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>a","alias":"MIN"}},"references":[{"id":"00-0031256","origin":"gsis"},{"id":"41235","origin":"nflx"}]},{"id":"a1c40664-b265-4083-aad2-54b4c734f2c5","name":"Stefon
+        Diggs","jersey":"14","last_name":"Diggs","first_name":"Stefon","abbr_name":"S.Diggs","preferred_name":"Stefon","birth_date":"1993-11-29","weight":191.0,"height":72,"position":"WR","age":24,"birth_place":"Gaithersburg,
+        MD, USA","high_school":"Good Counsel (MD)","college":"Maryland","college_conf":"Big
+        Ten Conference","rookie_year":2015,"status":"started","draft":{"year":2015,"round":5,"number":146,"team":{"id":"33405046-04ee-4058-a950-d606f8c30852","name":"Vikings","market":"Minnes<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>a","alias":"MIN"}},"references":[{"id":"42489","origin":"nflx"},{"id":"00-0031588","origin":"gsis"}]},{"id":"b0a3df00-b1ed-4ba5-8c2a-1414b6871e61","name":"Kevin
+        McDerm<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>t","jersey":"47","last_name":"McDerm<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>t","first_name":"Kevin","abbr_name":"K.McDerm<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>t","preferred_name":"Kevin","birth_date":"1990-01-12","weight":240.0,"height":77,"position":"LS","age":27,"birth_place":"Nashville,
+        TN, USA","high_school":"Ensworth (TN)","college":"UCLA","college_conf":"Pacific
+        Twelve Conference","rookie_year":2013,"status":"played","references":[{"id":"00-0029879","origin":"gsis"},{"id":"40336","origin":"nflx"}]},{"id":"5514afb6-bd43-49a8-9bf7-b8baaaecdabe","name":"Kai
+        Forbath","jersey":"02","last_name":"Forbath","first_name":"Kai","abbr_name":"K.Forbath","preferred_name":"Kai","birth_date":"1987-09-02","weight":197.0,"height":71,"position":"K","age":30,"birth_place":"Santa
+        Monica, CA, USA","high_school":"N<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>re Dame
+        (CA)","college":"UCLA","college_conf":"Pacific Twelve Conference","rookie_year":2011,"status":"played","references":[{"id":"00-0028787","origin":"gsis"},{"id":"38220","origin":"nflx"}]},{"id":"338adc8a-173d-4b1b-a5de-92818bf96823","name":"Trae
+        Waynes","jersey":"26","last_name":"Waynes","first_name":"Trae","abbr_name":"T.Waynes","preferred_name":"Trae","birth_date":"1992-07-25","weight":190.0,"height":72,"position":"CB","age":25,"birth_place":"Kenosha,
+        WI, USA","high_school":"Bradford (WI)","college":"Michigan State","college_conf":"Big
+        Ten Conference","rookie_year":2015,"status":"started","draft":{"year":2015,"round":1,"number":11,"team":{"id":"33405046-04ee-4058-a950-d606f8c30852","name":"Vikings","market":"Minnes<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>a","alias":"MIN"}},"references":[{"id":"00-0031546","origin":"gsis"},{"id":"42354","origin":"nflx"}]},{"id":"2e0badcd-b78c-40ee-a83b-a1bbb36bc545","name":"Laquon
+        Treadwell","jersey":"11","last_name":"Treadwell","first_name":"Laquon","abbr_name":"L.Treadwell","preferred_name":"Laquon","birth_date":"1995-06-14","weight":215.0,"height":74,"position":"WR","age":22,"birth_place":"Crete,
+        IL, USA","high_school":"Crete-Monee (IL)","college":"Mississippi","college_conf":"Southeastern
+        Conference","rookie_year":2016,"status":"played","draft":{"year":2016,"round":1,"number":23,"team":{"id":"33405046-04ee-4058-a950-d606f8c30852","name":"Vikings","market":"Minnes<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>a","alias":"MIN"}},"references":[{"id":"43312","origin":"nflx"},{"id":"00-0032951","origin":"gsis"}]},{"id":"e805571c-fc68-438c-b8db-2d1286d99182","name":"Danny
+        Isidora","jersey":"63","last_name":"Isidora","first_name":"Danny","abbr_name":"D.Isidora","preferred_name":"Danny","birth_date":"1994-06-05","weight":306.0,"height":75,"position":"G","age":23,"birth_place":"Weston,
+        FL, USA","high_school":"Cypress Bay (FL)","college":"Miami","college_conf":"Atlantic
+        Coast Conference","rookie_year":2017,"status":"played","draft":{"year":2017,"round":5,"number":180,"team":{"id":"33405046-04ee-4058-a950-d606f8c30852","name":"Vikings","market":"Minnes<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>a","alias":"MIN"}},"references":[{"id":"44993","origin":"nflx"},{"id":"00-0033960","origin":"gsis"}]},{"id":"81a5c010-2e89-4b65-a924-015cf4ea3f94","name":"Xavier
+        Rhodes","jersey":"29","last_name":"Rhodes","first_name":"Xavier","abbr_name":"X.Rhodes","preferred_name":"Xavier","birth_date":"1990-06-19","weight":218.0,"height":73,"position":"CB","age":27,"birth_place":"Miami,
+        FL, USA","high_school":"Norland (FL)","college":"Florida State","college_conf":"Atlantic
+        Coast Conference","rookie_year":2013,"status":"started","draft":{"year":2013,"round":1,"number":25,"team":{"id":"33405046-04ee-4058-a950-d606f8c30852","name":"Vikings","market":"Minnes<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>a","alias":"MIN"}},"references":[{"id":"39971","origin":"nflx"},{"id":"00-0030575","origin":"gsis"}]},{"id":"6ef5045f-9215-4354-a1af-3f86e4c4a03d","name":"Stephen
+        Weatherly","jersey":"91","last_name":"Weatherly","first_name":"Stephen","abbr_name":"S.Weatherly","preferred_name":"Stephen","birth_date":"1994-03-19","weight":265.0,"height":77,"position":"DE","age":23,"birth_place":"Snellville,
+        GA, USA","high_school":"Shiloh (GA)","college":"Vanderbilt","college_conf":"Southeastern
+        Conference","rookie_year":2016,"status":"played","draft":{"year":2016,"round":7,"number":227,"team":{"id":"33405046-04ee-4058-a950-d606f8c30852","name":"Vikings","market":"Minnes<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>a","alias":"MIN"}},"references":[{"id":"43516","origin":"nflx"},{"id":"00-0032448","origin":"gsis"}]},{"id":"1cf282eb-ab14-4d2d-8a0d-702ddd83cfcc","name":"Ben
+        Gedeon","jersey":"42","last_name":"Gedeon","first_name":"Ben","abbr_name":"B.Gedeon","preferred_name":"Ben","birth_date":"1994-10-16","weight":244.0,"height":74,"position":"LB","age":23,"birth_place":"Hudson,
+        OH, USA","high_school":"Hudson (OH)","college":"Michigan","college_conf":"Big
+        Ten Conference","rookie_year":2017,"status":"played","draft":{"year":2017,"round":4,"number":120,"team":{"id":"33405046-04ee-4058-a950-d606f8c30852","name":"Vikings","market":"Minnes<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>a","alias":"MIN"}},"references":[{"id":"44933","origin":"nflx"},{"id":"00-0033944","origin":"gsis"}]},{"id":"f9d87dfe-4a57-482a-a77f-37906daa4382","name":"Pat
+        Elflein","jersey":"65","last_name":"Elflein","first_name":"Pat","abbr_name":"P.Elflein","preferred_name":"Pat","birth_date":"1994-07-06","weight":303.0,"height":75,"position":"C","age":23,"birth_place":"Pickerington,
+        OH, USA","high_school":"Pickerington North (OH)","college":"Ohio State","college_conf":"Big
+        Ten Conference","rookie_year":2017,"status":"deactivated","draft":{"year":2017,"round":3,"number":70,"team":{"id":"33405046-04ee-4058-a950-d606f8c30852","name":"Vikings","market":"Minnes<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>a","alias":"MIN"}},"references":[{"id":"00-0033909","origin":"gsis"},{"id":"44882","origin":"nflx"}]},{"id":"d4cb52a9-f6b4-42ed-b40b-27bff5f1eea7","name":"Teddy
+        Bridgewater","jersey":"05","last_name":"Bridgewater","first_name":"Teddy","abbr_name":"T.Bridgewater","preferred_name":"Teddy","birth_date":"1992-11-10","weight":215.0,"height":74,"position":"QB","age":25,"birth_place":"Miami,
+        FL, USA","high_school":"Miami Northwestern (FL)","college":"Louisville","college_conf":"American
+        Athletic Conference","rookie_year":2014,"status":"dnp","draft":{"year":2014,"round":1,"number":32,"team":{"id":"33405046-04ee-4058-a950-d606f8c30852","name":"Vikings","market":"Minnes<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>a","alias":"MIN"}},"references":[{"id":"00-0031237","origin":"gsis"},{"id":"41258","origin":"nflx"}]},{"id":"d38bd9b4-1927-4cca-84da-5c7dd5b21716","name":"Tashawn
+        Bower","jersey":"90","last_name":"Bower","first_name":"Tashawn","abbr_name":"T.Bower","preferred_name":"Tashawn","birth_date":"1995-02-18","weight":250.0,"height":77,"position":"DE","age":22,"birth_place":"Somerville,
+        NJ, USA","high_school":"Immaculata (NJ)","college":"Louisiana State","college_conf":"Southeastern
+        Conference","rookie_year":2017,"status":"deactivated","references":[{"id":"45203","origin":"nflx"},{"id":"00-0033324","origin":"gsis"}]},{"id":"776e4a24-08d7-46f4-a713-d384cd567f21","name":"Mike
+        Remmers","jersey":"74","last_name":"Remmers","first_name":"Mike","abbr_name":"M.Remmers","preferred_name":"Mike","birth_date":"1989-04-11","weight":310.0,"height":77,"position":"T","age":28,"birth_place":"Portland,
+        OR, USA","high_school":"Jesuit (OR)","college":"Oregon State","college_conf":"Pacific
+        Twelve Conference","rookie_year":2012,"status":"deactivated","references":[{"id":"00-0029164","origin":"gsis"},{"id":"39146","origin":"nflx"}]},{"id":"7f59e894-4ce1-4803-a556-2e02add60bc2","name":"Aviante
+        Collins","jersey":"76","last_name":"Collins","first_name":"Aviante","abbr_name":"A.Collins","preferred_name":"Aviante","birth_date":"1993-04-21","weight":295.0,"height":78,"position":"T","age":24,"birth_place":"Houston,
+        TX, USA","high_school":"Willowridge (TX)","college":"Texas Christian","college_conf":"Big
+        Twelve Conference","rookie_year":2017,"status":"dnp","references":[{"id":"00-0033326","origin":"gsis"},{"id":"45205","origin":"nflx"}]},{"id":"9823700a-2d8e-4872-862d-382d69c67a46","name":"Kentrell
+        Br<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>hers","jersey":"40","last_name":"Br<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>hers","first_name":"Kentrell","abbr_name":"K.Br<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>hers","preferred_name":"Kentrell","birth_date":"1993-02-08","weight":242.0,"height":73,"position":"LB","age":24,"birth_place":"Guthrie,
+        OK, USA","high_school":"Guthrie (OK)","college":"Missouri","college_conf":"Southeastern
+        Conference","rookie_year":2016,"status":"played","draft":{"year":2016,"round":5,"number":160,"team":{"id":"33405046-04ee-4058-a950-d606f8c30852","name":"Vikings","market":"Minnes<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>a","alias":"MIN"}},"references":[{"id":"43449","origin":"nflx"},{"id":"00-0032422","origin":"gsis"}]},{"id":"2fa2b2da-4aa9-44b5-b27e-56876dfe2ad4","name":"Adam
+        Thielen","jersey":"19","last_name":"Thielen","first_name":"Adam","abbr_name":"A.Thielen","preferred_name":"Adam","birth_date":"1990-08-22","weight":200.0,"height":74,"position":"WR","age":27,"birth_place":"Detroit
+        Lakes, MN, USA","high_school":"Detroit Lakes (MN)","college":"Minn. State-Mankato","college_conf":"Northern
+        Sun Intercollegiate Conference","rookie_year":2013,"status":"started","references":[{"id":"40488","origin":"nflx"},{"id":"00-0030035","origin":"gsis"}]},{"id":"54475db4-f0e8-4513-bcc8-7e76362c19f7","name":"Everson
+        Griffen","jersey":"97","last_name":"Griffen","first_name":"Everson","abbr_name":"E.Griffen","preferred_name":"Everson","birth_date":"1987-12-22","weight":273.0,"height":75,"position":"DE","age":29,"birth_place":"Avondale,
+        AZ, USA","high_school":"Agua Fria Union (AZ)","college":"Southern California","college_conf":"Pacific
+        Ten Conference","rookie_year":2010,"status":"started","draft":{"year":2010,"round":4,"number":100,"team":{"id":"33405046-04ee-4058-a950-d606f8c30852","name":"Vikings","market":"Minnes<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>a","alias":"MIN"}},"references":[{"id":"00-0027701","origin":"gsis"},{"id":"35539","origin":"nflx"}]},{"id":"a7413fb5-8d05-457f-a97f-504bee73a910","name":"Anthony
+        Harris","jersey":"41","last_name":"Harris","first_name":"Anthony","abbr_name":"A.Harris","preferred_name":"Anthony","birth_date":"1991-10-09","weight":192.0,"height":73,"position":"S","age":26,"birth_place":"Chesterfield,
+        VA, USA","high_school":"Lloyd C. Bird High School (VA)","college":"Virginia","college_conf":"Atlantic
+        Coast Conference","rookie_year":2015,"status":"played","references":[{"id":"42830","origin":"nflx"},{"id":"00-0031799","origin":"gsis"}]},{"id":"1b3d350a-478b-4542-a430-d12cc96adc22","name":"Case
+        Keenum","jersey":"07","last_name":"Keenum","first_name":"Case","abbr_name":"C.Keenum","preferred_name":"Case","birth_date":"1988-02-17","weight":205.0,"height":73,"position":"QB","age":29,"birth_place":"Brownwood,
+        TX","high_school":"Wylie HS (TX)","college":"Houston","college_conf":"American
+        Athletic Conference","rookie_year":2012,"status":"started","references":[{"id":"00-0028986","origin":"gsis"},{"id":"38937","origin":"nflx"}]},{"id":"7dc5af64-ae1d-4915-8af9-a4f5fb601710","name":"Mack
+        Brown","jersey":"31","last_name":"Brown","first_name":"Mack","abbr_name":"M.Brown","preferred_name":"Mack","birth_date":"1991-09-24","weight":213.0,"height":71,"position":"RB","age":26,"birth_place":"Clarkston,
+        GA, USA","high_school":"Martin Luther King (GA)","college":"Florida","college_conf":"Southeastern
+        Conference","rookie_year":2015,"status":"played","references":[{"id":"43050","origin":"nflx"},{"id":"00-0032048","origin":"gsis"}]},{"id":"4f799675-2b27-4437-9acc-bc4e0c73ef0f","name":"Marcus
+        Sherels","jersey":"35","last_name":"Sherels","first_name":"Marcus","abbr_name":"M.Sherels","preferred_name":"Marcus","birth_date":"1987-09-30","weight":175.0,"height":70,"position":"CB","age":30,"birth_place":"Rochester,
+        MN, USA","high_school":"John Marshall (MN)","college":"Minnes<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>a","college_conf":"Big
+        Ten Conference","rookie_year":2010,"status":"played","references":[{"id":"36071","origin":"nflx"},{"id":"00-0027547","origin":"gsis"}]},{"id":"9163afa3-2f7d-4fc0-bf96-f5d8f618969a","name":"Joe
+        Berger","jersey":"61","last_name":"Berger","first_name":"Joe","abbr_name":"J.Berger","preferred_name":"Joe","birth_date":"1982-05-25","weight":305.0,"height":77,"position":"G","age":35,"birth_place":"Fremont,
+        MI, USA","high_school":"Newaygo (MI)","college":"Michigan Tech","college_conf":"Great
+        Lakes Intercollegiate Athletic Conference","rookie_year":2005,"status":"started","draft":{"year":2005,"round":6,"number":207,"team":{"id":"f14bf5cc-9a82-4a38-bc15-d39f75ed5314","name":"Panthers","market":"Carolina","alias":"CAR"}},"references":[{"id":"30035","origin":"nflx"},{"id":"00-0023639","origin":"gsis"}]},{"id":"6a11f09e-268c-4e5a-9b0f-cc0f4bc353c3","name":"Jarius
+        Wright","jersey":"17","last_name":"Wright","first_name":"Jarius","abbr_name":"J.Wright","preferred_name":"Jarius","birth_date":"1989-11-25","weight":191.0,"height":70,"position":"WR","age":28,"birth_place":"Warren,
+        AR, USA","high_school":"Warren High School (AR)","college":"Arkansas","college_conf":"Southeastern
+        Conference","rookie_year":2012,"status":"played","draft":{"year":2012,"round":4,"number":118,"team":{"id":"33405046-04ee-4058-a950-d606f8c30852","name":"Vikings","market":"Minnes<NFL_SPORT_RADAR_V2_ACCESS_LEVEL>a","alias":"MIN"}},"references":[{"id":"38648","origin":"nflx"},{"id":"00-0029572","origin":"gsis"}]},{"id":"6ca35fe6-900c-4903-aa23-a5ca55ac6a3d","name":"Rashod
+        Hill","jersey":"69","last_name":"Hill","first_name":"Rashod","abbr_name":"R.Hill","preferred_name":"Rashod","birth_date":"1992-01-12","weight":309.0,"height":78,"position":"T","age":25,"birth_place":"Jacksonville,
+        FL, USA","high_school":"Ed White (FL)","college":"Southern Mississippi","college_conf":"Conference
+        USA","rookie_year":2016,"status":"started","references":[{"id":"00-0032520","origin":"gsis"},{"id":"43640","origin":"nflx"}]},{"id":"540f8b30-900e-4d17-8756-c262ba5fa039","name":"Latavius
+        Murray","jersey":"25","last_name":"Murray","first_name":"Latavius","abbr_name":"L.Murray","preferred_name":"Latavius","birth_date":"1990-01-18","weight":230.0,"height":75,"position":"RB","age":27,"birth_place":"Nedrow,
+        NY, USA","high_school":"Onondaga Central (FL)","college":"Central Florida","college_conf":"Conference
+        USA","rookie_year":2013,"status":"started","draft":{"year":2013,"round":6,"number":181,"team":{"id":"1c1cec48-6352-4556-b789-35304c1a6ae1","name":"Raiders","market":"Oakland","alias":"OAK"}},"references":[{"id":"00-0030513","origin":"gsis"},{"id":"40129","origin":"nflx"}]}]},"officials":[{"full_name":"Johnson,
+        Carl","number":"101","assignment":"linejudge"},{"full_name":"Monroe, Jonah","number":"120","assignment":"sidejudge"},{"full_name":"Frantz,
+        Earnie","number":"0","assignment":"replayofficial"},{"full_name":"McAulay,
+        Terry","number":"77","assignment":"referee"},{"full_name":"Bergman, Jerry","number":"91","assignment":"downjudge"},{"full_name":"Martinez,
+        Rich","number":"39","assignment":"backjudge"},{"full_name":"Woods, Steven","number":"54","assignment":"umpire"},{"full_name":"Banks,
+        Michael","number":"72","assignment":"fieldjudge"}],"_comment":"Generation
+        started @ 2018-06-26 02:25:48 +0000 ended @ 2018-06-26 02:25:48 +0000"}'
+    http_version: 
+  recorded_at: Tue, 26 Jun 2018 02:25:48 GMT
+recorded_with: VCR 4.0.0

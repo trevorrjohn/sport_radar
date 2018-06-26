@@ -18,7 +18,7 @@ RSpec.describe SportRadar::Request do
       response = subject.get('/example')
 
       expect(response).to eq("my_json" => "body")
-      uri = URI(SportRadar::Request::BASE_URL + "/example.json?api_key=my-key")
+      uri = URI(SportRadar::Request::HOST + "/example.json?api_key=my-key")
       expect(Net::HTTP).to have_received(:get)
         .with(uri)
     end

@@ -27,10 +27,18 @@ RSpec.describe SportRadar::Config do
       end
 
       describe '#api_key' do
+        around do |spec|
+          api_key_env = ENV.delete('NFL_V2_SPORT_RADAR_API_KEY')
+          access_level_env = ENV.delete('NFL_V2_SPORT_RADAR_ACCESS_LEVEL')
+          spec.run
+          ENV['NFL_V2_SPORT_RADAR_API_KEY'] = api_key_env
+          ENV['NFL_V2_SPORT_RADAR_ACCESS_LEVEL'] = access_level_env
+        end
+
         context 'when environment variable set' do
           it 'reads environment variable' do
-            ENV['NFL_V2_SPORT_RADAR_API_KEY'] = 'env-key'
-            expect(subject.nfl.v2.api_key).to eq 'env-key'
+            ENV['NFL_V2_SPORT_RADAR_API_KEY'] = 'nfl-env-key'
+            expect(subject.nfl.v2.api_key).to eq 'nfl-env-key'
             ENV.delete('NFL_V2_SPORT_RADAR_API_KEY')
           end
         end
@@ -45,8 +53,8 @@ RSpec.describe SportRadar::Config do
       describe '#access_level' do
         context 'when environment variable set' do
           it 'reads environment variable' do
-            ENV['NFL_V2_SPORT_RADAR_ACCESS_LEVEL'] = 'env-level'
-            expect(subject.nfl.v2.access_level).to eq 'env-level'
+            ENV['NFL_V2_SPORT_RADAR_ACCESS_LEVEL'] = 'nfl-env-level'
+            expect(subject.nfl.v2.access_level).to eq 'nfl-env-level'
             ENV.delete('NFL_V2_SPORT_RADAR_ACCESS_LEVEL')
           end
         end

@@ -3,6 +3,9 @@
 require "bundler/setup"
 require "sport_radar"
 require "pry"
+require "vcr"
+require "webmock/rspec"
+require "support/vcr"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
